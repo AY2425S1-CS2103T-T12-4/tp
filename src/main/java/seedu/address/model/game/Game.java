@@ -20,29 +20,38 @@ public class Game {
 
     public final String gameName;
     public final Username username;
+    public final SkillLevel skillLevel;
+    public final Role role;
+
 
     /**
-     * Constructs a {@code Game} without a username.
+     * Constructs a {@code Game}.
      *
      * @param gameName A valid Game name.
+     * @param username (Optional) A username.
+     * @param skillLevel (Optional) A skill level.
+     * @param role (Optional) A role.
      */
-    public Game(String gameName) {
+    public Game(String gameName, String username, String skillLevel, String role) {
         requireNonNull(gameName);
         checkArgument(isValidGameName(gameName), MESSAGE_CONSTRAINTS);
         this.gameName = gameName;
-        this.username = null;
+        this.username = username != null ? new Username(username) : null;
+        this.skillLevel = skillLevel != null ? new SkillLevel(skillLevel) : null;
+        this.role = role != null ? new Role(role) : null;
     }
 
-    /**
-     * Constructs a {@code Game} with a username.
-     *
-     * @param gameName A valid Game name.
-     */
+    // Overloaded constructors for convenience
+    public Game(String gameName) {
+        this(gameName, null, null, null);
+    }
+
     public Game(String gameName, String username) {
-        requireNonNull(gameName);
-        checkArgument(isValidGameName(gameName), MESSAGE_CONSTRAINTS);
-        this.gameName = gameName;
-        this.username = new Username(username);
+        this(gameName, username, null, null);
+    }
+
+    public Game(String gameName, String username, String skillLevel) {
+        this(gameName, username, skillLevel, null);
     }
 
     /**
