@@ -7,15 +7,13 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
  * Represents a username in a Game.
  */
 public class Username {
-
     private static final String MESSAGE_CONSTRAINTS =
             "Username should not be blank";
-
     /*
      * Regex expression matches Strings that contain at least one non-whitespace character.
      */
     private static final String VALIDATION_REGEX = "^(?!\\s*$).+";
-
+    
     private final String username;
 
     /**
