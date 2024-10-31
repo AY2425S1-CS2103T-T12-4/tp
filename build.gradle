@@ -28,6 +28,7 @@ checkstyle {
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
+    systemProperty 'testfx.headless', 'true'
     timeout = Duration.ofMinutes(3)
     testLogging {
         events "started", "failed"
