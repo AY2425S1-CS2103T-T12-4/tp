@@ -1,3 +1,5 @@
+import java.time.Duration
+
 plugins {
     id 'java'
     id 'checkstyle'
@@ -26,7 +28,7 @@ checkstyle {
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
-    timeout = "12s"
+    timeout = Duration.ofSeconds(12)
 }
 
 task coverage(type: JacocoReport) {
