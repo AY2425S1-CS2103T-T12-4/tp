@@ -33,7 +33,6 @@ test {
         events "started", "failed"
         showStandardStreams = true
     }
-    maxParallelForks = 2
 }
 
 task coverage(type: JacocoReport) {
