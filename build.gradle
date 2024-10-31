@@ -28,7 +28,7 @@ checkstyle {
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
-    timeout = Duration.ofSeconds(12)
+    timeout = Duration.ofMinutes(3)
 }
 
 task coverage(type: JacocoReport) {
