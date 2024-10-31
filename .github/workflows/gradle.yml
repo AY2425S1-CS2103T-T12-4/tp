@@ -39,6 +39,13 @@ jobs:
       - name: Build and check with Gradle
         run: ./gradlew check coverage
 
+      - name: Upload Test Report
+        if: failure() && runner.os == 'Linux'  # Only upload on failure and on Linux
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: build/reports/tests/test  # Path to the test report folder
+
       - name: Upload coverage reports to Codecov
         if: runner.os == 'Linux'
         uses: codecov/codecov-action@v4
