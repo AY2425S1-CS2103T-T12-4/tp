@@ -26,6 +26,7 @@ checkstyle {
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
+    timeout = 12
 }
 
 task coverage(type: JacocoReport) {
