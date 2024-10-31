@@ -29,6 +29,11 @@ test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
     timeout = Duration.ofMinutes(3)
+    testLogging {
+        events "started", "failed"
+        showStandardStreams = true
+    }
+    maxParallelForks = 2
 }
 
 task coverage(type: JacocoReport) {
