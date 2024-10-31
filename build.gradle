@@ -28,8 +28,11 @@ checkstyle {
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
-    // Set JVM arguments for the test task
-    jvmArgs '-Djava.awt.headless=true', '-Dprism.order=sw', '-Dprism.verbose=true'
+    // JVM arguments to enable module exports for JavaFX
+    jvmArgs '--add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED',
+            '-Djava.awt.headless=true',
+            '-Dprism.order=sw',
+            '-Dprism.verbose=true'
     systemProperty 'testfx.headless', 'true'
     timeout = Duration.ofMinutes(3)
     testLogging {
