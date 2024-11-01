@@ -34,7 +34,6 @@ test {
             '-Djava.awt.headless=true',
             '-Dprism.order=sw',
             '-Dprism.verbose=true'
-    systemProperty 'testfx.headless', 'true'
     timeout = Duration.ofMinutes(3)
     testLogging {
         events "started", "failed"
