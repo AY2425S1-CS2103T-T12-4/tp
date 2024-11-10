@@ -64,7 +64,10 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "appendix-planned-enhancement": "Appendix: Planned Enhancement",
+        "preferred-time-make-overnight-ranges-functional": "Preferred Time: Make Overnight Ranges Functional",
+        "findtime-command-adjustment-on-boundary-overlapping": "FindTime Command: Adjustment on Boundary Overlapping"
       },
       "headingKeywords": {}
     },
