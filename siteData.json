@@ -68,9 +68,9 @@
         "enhanced-error-messaging-for-findtime-command": "Enhanced Error Messaging for FindTime Command",
         "contact-card-title-overflow-handling": "Contact Card Title Overflow Handling",
         "appendix-efforts": "Appendix: Efforts",
-        "difficulty-level": "Difficulty Level:",
-        "challenges-faced": "Challenges Faced:",
-        "effort-required": "Effort Required:"
+        "difficulty-level": "Difficulty Level",
+        "challenges-faced": "Challenges Faced",
+        "effort-required": "Effort Required"
       },
       "headingKeywords": {}
     },
