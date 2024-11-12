@@ -59,13 +59,14 @@
         "use-cases": "Use cases",
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
-        "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
+        "appendix-instructions-for-manual-testing": "Appendix: Instructions for Manual Testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data",
-        "appendix-planned-enhancement": "Appendix: Planned Enhancement",
-        "preferred-time-make-overnight-ranges-functional": "Preferred Time: Make Overnight Ranges Functional",
-        "findtime-command-adjustment-on-boundary-overlapping": "FindTime Command: Adjustment on Boundary Overlapping"
+        "commands-testing": "Commands Testing",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements",
+        "preferred-time-supporting-overnight-ranges": "Preferred Time: Supporting Overnight Ranges",
+        "findtime-command-boundary-overlap-adjustment": "FindTime Command: Boundary Overlap Adjustment",
+        "enhanced-error-messaging-for-findtime-command": "Enhanced Error Messaging for FindTime Command",
+        "contact-card-title-overflow-handling": "Contact Card Title Overflow Handling"
       },
       "headingKeywords": {}
     },
